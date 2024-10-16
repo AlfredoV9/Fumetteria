@@ -1,0 +1,73 @@
+.modal-dialog {
+    max-width: 100% !important;
+    width: auto !important;
+    max-width: none !important;
+}
+
+.modal {
+    background-color: transparent !important;
+    --bs-modal-width: none !important;
+}
+
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 8px;
+}
+
+.modal-body {
+    padding: 20px !important;
+    color: white;
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+img {
+    width: 150px;
+    border-radius: 8px;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.volume-selection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.volume-card {
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.volume-card.selected {
+    border: 2px solid green;
+}
+
+.checkmark {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 12px;
+}

@@ -1,0 +1,42 @@
+.theme-switch {
+    position: relative;
+    width: 50px; /* Larghezza totale dello switch */
+    height: 26px; /* Altezza totale dello switch */
+    margin-top: 20px;
+  }
+  
+  .theme-switch input {
+    opacity: 0; /* Nascondi l'input originale */
+    width: 0;
+    height: 0;
+  }
+  
+  .switch-label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc; /* Colore dello switch quando è spento */
+    border-radius: 50px; /* Bordo arrotondato */
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s ease;
+  }
+  
+  .switch-ball {
+    position: absolute;
+    top: 3px; /* Margine superiore per centrare */
+    left: 3px; /* Margine sinistro per centrare */
+    width: 20px; /* Diametro della pallina */
+    height: 20px; /* Diametro della pallina */
+    background-color: white; /* Colore della pallina */
+    border-radius: 50%; /* Pallina arrotondata */
+    transition: transform 0.2s ease; /* Transizione fluida per il movimento */
+  }
+  
+  .theme-switch input:checked + .switch-label {
+    background-color: #4CAF50; /* Colore dello switch quando è acceso */
+  }
+  
+  .theme-switch input:checked + .switch-label .switch-ball {
+    transform: translateX(24px); /* Sposta la pallina a destra */
+  }

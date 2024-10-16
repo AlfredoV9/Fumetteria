@@ -1,0 +1,98 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.modalContent {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1060;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.menuTitle {
+    color: #E1058B;
+    margin: 0;
+}
+
+.closeButton {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.modalBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20vh;
+}
+
+.centerButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginPrompt {
+    margin-bottom: 20px;
+}
+
+.loginText {
+    color: #fff;
+}
+
+.sectionTitle {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    width: 100vw;
+}
+
+.sectionLine {
+    height: 2px;
+    width: 85vw;
+    background-color: #E1058B;
+    margin-left: 10px;
+}
+
+.sections {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.buttonGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
